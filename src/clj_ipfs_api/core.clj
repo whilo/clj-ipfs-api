@@ -58,5 +58,4 @@
              @api-url
              "address, please pick one with `set-api-url!`.")))
 
-(setup!) ; Try to setup using the default address.
 (defn set-api-url! [new-url] (reset! api-url new-url) (setup!))

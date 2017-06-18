@@ -16,6 +16,9 @@ IPFS API wrapper in Clojure
 Launch the [IPFS Daemon](https://ipfs.io/docs/getting-started/).
 
 ```clojure
+;; connect to the ipfs daemon, default is http://127.0.0.1:5001
+(ipfs/setup!)
+
 ;; for default daemon settings use just like cli
 ;; commands are joined with dashes
 (ipfs/swarm-peers)
